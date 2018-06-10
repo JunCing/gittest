@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="menu">
+            <div class="menubtn Tasks"><a href="">My Tasks</a><div class="border"></div></div>
+            <div class="menubtn Progress"><a href="">In Progress</a><div class="border"></div></div>
+            <div class="menubtn Completed"><a href="">Completed</a><div class="border"></div></div>
+            </div>
+        </div>
+          <input class="addbox" type="button" value="+ Add Task"  placeholder="add Task">
+          <div class="listbox">
+                <ul class="list">
+                        <li class="listContent">
+                        <input class="checked" type="checkbox">
+                         <input type="text" class="listTxt" placeholder="add task...">
+                         <span class="mark">
+                             <i id="Star" class="fas fa-star fontStyle  starColor"></i>
+                         </span>
+                         <span class="edit">
+                             <i class="fas fa-pencil-alt fontStyle Pen penColor" ></i>
+                         </span>
+                        </li>
+                        <li class="status">
+                            <span class="date"><i class="far fa-calendar-alt iconfont"> 5/14</i></span>
+                            <span class="addfile"><i class="far fa-file iconfont"></i></span>
+                            <span class="Comment"><i class="far fa-comment-dots iconfont"></i></span>
+                        </li>  
+                    </ul>      
+                    
+                    <div id="DDD" class="ddd" >
+                        <div class="TOTXT"><h3><i class="far fa-calendar-alt iconfont"></i>Deadline</h3>
+                            <input class="date" type="date" id="bookdate" placeholder="2014-09-18">
+                            <input type="time" name="usr_time">
+                            <h3><i class="far fa-file iconfont"></i>File</h3>
+                            <label class="labelStyle">
+                                <input class="fileStyle" type="button" style="display:block;" value="&#x2795;"><i class="fa fa-photo"></i> 
+                            </label>
+                            <h3><i class="far fa-comment-dots iconfont"></i>Comment</h3>  
+                            <div class="CommentStyle">Type your memo here…</div> 
+                            <input class="TOTXTBtn Cancel" type="button" value="x Cancel">
+                            <input class="TOTXTBtn addTask"  type="button" value="+ Add Task"></div></div> </div> 
+                      
+                      
+                  </div>
+              
+          </div>
+ 
+     </div>
+     <script src="js/all.js"></script>
+</body>
+</html>

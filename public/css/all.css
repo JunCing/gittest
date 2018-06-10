@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #E1E1E1; }
+
+.wrapper {
+  width: 1024px;
+  height: 1024px;
+  background: #E1E1E1;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+  @media (max-width: 1024px) {
+    .wrapper {
+      width: 100%; } }
+
+.header {
+  width: 1024px;
+  height: 76px;
+  background: #4A90E2; }
+  @media (max-width: 1024px) {
+    .header {
+      width: 100%; } }
+  @media (max-width: 480px) {
+    .header {
+      height: auto; } }
+  .header .menu {
+    width: 660px;
+    margin: 0 auto; }
+    @media (max-width: 660px) {
+      .header .menu {
+        width: 100%;
+        margin-left: 0%;
+        background: #4A90E2; } }
+    .header .menu div {
+      width: 220px;
+      height: 76px;
+      font-family: Roboto-Regular;
+      font-size: 24px;
+      position: relative;
+      text-align: center;
+      float: left;
+      list-style: none;
+      line-height: 76px; }
+      .header .menu div:hover .border {
+        opacity: 1; }
+      @media (max-width: 660px) {
+        .header .menu div {
+          width: 33.33333%; } }
+      @media (max-width: 480px) {
+        .header .menu div {
+          width: 100%;
+          float: none; } }
+      .header .menu div a {
+        width: 220px;
+        display: block;
+        text-align: center;
+        height: 75px;
+        color: #00408B;
+        text-decoration: none; }
+        @media (max-width: 660px) {
+          .header .menu div a {
+            width: 100%;
+            font-size: 20px; } }
+        .header .menu div a:hover {
+          cursor: pointer;
+          color: #fff; }
+      .header .menu div .aClick {
+        color: #fff; }
+      .header .menu div .border {
+        display: block;
+        height: 5px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        opacity: 0;
+        z-index: 5;
+        background: #00408B;
+        -webkit-transition: all 1s;
+        transition: all 1s; }
+
+.addbox {
+  display: block;
+  width: 620px;
+  height: 65px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: left;
+  color: #000;
+  background: #FFFFFF;
+  font-size: 24px; }
+  @media (max-width: 620px) {
+    .addbox {
+      width: 100%; } }
+
+.listbox {
+  width: 620px;
+  height: 102px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto; }
+  @media (max-width: 660px) {
+    .listbox {
+      width: 100%;
+      height: auto; } }
+  .listbox .list {
+    height: 70px;
+    background: #F2F2F2; }
+    .listbox .list .listContent {
+      display: block;
+      height: 70px;
+      list-style: none;
+      line-height: 70px;
+      margin-left: 30px;
+      margin-top: 10px; }
+      .listbox .list .listContent .checked {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px; }
+        @media (max-width: 480px) {
+          .listbox .list .listContent .checked {
+            width: 10%; } }
+      .listbox .list .listContent .listTxt {
+        font-size: 24px;
+        border: none;
+        background: #F2F2F2; }
+        @media (max-width: 480px) {
+          .listbox .list .listContent .listTxt {
+            width: 50%; } }
+      .listbox .list .listContent .edit {
+        float: right; }
+      .listbox .list .listContent .mark {
+        float: right; }
+      .listbox .list .listContent .fontStyle {
+        margin-right: 8px;
+        cursor: pointer;
+        font-size: 24px; }
+      .listbox .list .listContent .Pen:hover {
+        color: #4A90E2; }
+    .listbox .list .penColor {
+      color: #4A90E2; }
+    .listbox .list .penOut {
+      color: #000; }
+    .listbox .list .starColorClick {
+      color: #F5A623; }
+    .listbox .list .starColor {
+      color: #000; }
+    .listbox .list .status {
+      display: none;
+      height: 30px;
+      list-style: none;
+      margin-left: 30px; }
+      .listbox .list .status span {
+        margin-right: 10px; }
+        .listbox .list .status span .iconfont {
+          color: #757575;
+          font-size: 20px; }
+
+.TOTXT {
+  width: 620px;
+  height: 443px;
+  background: #F2F2F2;
+  padding-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  /*.labelStyle{
+    font-size: 1.25em;
+    font-weight: 70px;
+    width: 90px;
+    height: 40px;
+    color: white;
+    background-color: #757575;
+    display: inline-block;
+    @include TOTXTLEFT(100px);
+    @include TOTXTINPUT(30px);
+    @include moblie620(){
+        @include TOTXTLEFT(100px);
+    }
+    }*/ }
+  @media (max-width: 660px) {
+    .TOTXT {
+      width: 100%; } }
+  .TOTXT h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: 80px; }
+    @media (max-width: 620px) {
+      .TOTXT h3 {
+        margin-left: 5%; } }
+  .TOTXT i {
+    margin-right: 5px; }
+  .TOTXT .date {
+    margin-right: 10px;
+    margin-left: 95px;
+    margin-bottom: 20px; }
+    @media (max-width: 620px) {
+      .TOTXT .date {
+        margin-left: 9%; } }
+  .TOTXT .fileStyle {
+    background: #C8C8C8;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    margin-left: 95px;
+    margin-bottom: 30px; }
+    @media (max-width: 620px) {
+      .TOTXT .fileStyle {
+        margin-left: 9%; } }
+  .TOTXT .CommentStyle {
+    width: 430px;
+    height: 140px;
+    background: #fff;
+    margin-left: 95px; }
+    @media (max-width: 620px) {
+      .TOTXT .CommentStyle {
+        margin-left: 10%;
+        margin-right: 10%; } }
+    @media (max-width: 480px) {
+      .TOTXT .CommentStyle {
+        margin-left: 5%;
+        margin-right: 5%; } }
+  .TOTXT .TOTXTBtn {
+    font-family: Roboto-Regular;
+    width: 310px;
+    height: 60px;
+    border: none;
+    float: left;
+    background: #fff;
+    font-size: 24PX;
+    margin-top: 38px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    @media (max-width: 660px) {
+      .TOTXT .TOTXTBtn {
+        width: 50%; } }
+    .TOTXT .TOTXTBtn:hover {
+      background: #4A90E2;
+      color: #D0021B; }
+
+.ddd {
+  height: 490px;
+  overflow: hidden;
+  -webkit-transition: all ,0.5s;
+  transition: all ,0.5s; }
+
+.dddup {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all ,0.5s;
+  transition: all ,0.5s; }
